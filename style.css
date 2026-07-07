@@ -166,6 +166,21 @@ header{
     color: var(--texto-color-primario);
 }
 
+.opiniones-clientes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.opinion-item{
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    padding: 1em 2em;
+    color: var(--texto-color-secundario);
+}
 /* ==========================
 
   FOOTER
