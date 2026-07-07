@@ -54,6 +54,13 @@ header{
     color: var(--texto-color-primario);
 }
 
+.menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    color: var(--texto-color-primario);
+}
+
 /* ==========================
 
   BANNER
@@ -142,6 +149,23 @@ header{
     border-radius: 3em;
 }
 
+.beneficios{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.beneficio-item{
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 2em;
+    background-color: var(--color-primario);
+    color: var(--texto-color-primario);
+}
+
 /* ==========================
 
   FOOTER
@@ -154,5 +178,21 @@ footer{
     justify-content: space-between;
     gap: 2em;
     padding: 3 em 2em;
-    
+    background-color: var(--color-primario);
+    color: var(--texto-color-primario);
 }
+
+.footer-col{
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-col h4{
+    font-family: var(--fuente-titulos);
+    margin-bottom: .8em;
+}
+
+.footer-col p{
+    margin-bottom: .1em;
+}
+
