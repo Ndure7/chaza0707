@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --color-primario: #0f117e;
+    --color-secondario: #e4e6df;
+    --texto-color-primario: #ffffff;
+    --texto-color-secundario: #000000;
+    --altura-header: 320px;
+    --fuente-titulos: 'lucida sans', sans-serif;
+
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo-blanco{
+    background-color: white;
+}
+
+.bienvenida{
+    position: absolute;
+    font-family: var(--fuente-titulos);
+    /* 1em equivale al tamaño de la fuente por default en body, que en este caso es 16px, entonces 1em = 16px */
+    color: var(--texto-color-primario);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 1em 2em;
+    background-color: var(--color-primario);
+    color: var(--texto-color-primario);
+}
+
+
+.categorias{
+    background-color: var(--texto-color-primario);
+    display: flex;
+    align-items: center;
+    padding: 2em 0;
+    gap: 2em;
+    overflow-x: auto;
+}
+
+.item-categoria{
+    flex: 0 0 110px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    padding: .5em;
+    color: var(--color-primario);
+    transition: all .25s ease-out;
+    display: grid;
+    place-items: center;
+}
+
+.item-categoria .fa-solid{font-size:2em}
+
+.item-categoria:hover{
+    background-color: var(--color-primario);
+    color: white;
+    transform: scale(1.05);
+    cursor: pointer ;
+    border-radius: 3em;
+}
